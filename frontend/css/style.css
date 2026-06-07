@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    height: 100%;
+}
+.get-started-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    color: white;
+    background-image: url(/frontend/assets/get-started-bgimg\ .png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    gap: 0.7rem;
+}
+.logo-wrapper img{
+    height: 190px;
+    width: 200px;
+}
+.btn-get-started-wrapper{
+    background-color: rgb(57, 80, 238);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 80%;
+}

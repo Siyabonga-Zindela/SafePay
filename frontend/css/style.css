@@ -28,3 +28,11 @@ body{
     padding: 15px;
     width: 80%;
 }
+.btn-get-started-wrapper a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.signin-link{
+    color: rgb(57, 196, 238);
+}

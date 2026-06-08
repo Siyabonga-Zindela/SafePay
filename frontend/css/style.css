@@ -14,12 +14,25 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    justify-content: center;
-    gap: 0.7rem;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.get-started-top, .get-started-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.get-started-wrapper p{
+    margin: 2px;
 }
 .logo-wrapper img{
     height: 190px;
     width: 200px;
+}
+h1{
+    text-align: center;
 }
 .btn-get-started-wrapper{
     background-color: rgb(57, 80, 238);
@@ -27,6 +40,7 @@ body{
     text-align: center;
     padding: 15px;
     width: 80%;
+    margin-bottom: 20px;
 }
 .btn-get-started-wrapper a{
     color: white;
@@ -35,4 +49,116 @@ body{
 }
 .signin-link{
     color: rgb(57, 196, 238);
+}
+
+
+
+
+/*SIGN IN STYLES*/
+
+.sign-in-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.welcome-msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.welcome-msg img {
+    height: 190px;
+    width: 200px;
+}
+
+.welcome-msg p {
+    color: gray;
+    text-align: center;
+}
+.credentials-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.labels {
+    display: block;
+    left: 0px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 45px;
+}
+
+.signin-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-fields {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    width: 80%;
+    height: 3em;
+    border-radius: 15px;
+    border: 1px solid rgb(167, 167, 167);
+    outline: none;
+    padding-left: 10px;
+}
+.forgot-password-link {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    text-wrap: nowrap;
+    font-size: 0.9rem;
+    align-self: flex-end;
+    margin-right: 45px;
+    margin-bottom: 10px;
+}
+.sign-in-btn {
+    display: block;
+    background-color: blue;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 15px;
+    width: 80%;
+}
+.sign-in-btn a {
+    color: white;
+    text-decoration: none;
+}
+.sign-in-btn:hover {
+    box-shadow: 0 0 30px gray;
+    transform:  translateY(10px);
+    transition: ease-in-out 0.5s;
+}
+.signin-options-wrapper{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 1.7rem;
+    margin-bottom: 2rem;
+}
+.signin-option-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: center;
+}
+.signin-with-text{
+    color: gray;
 }

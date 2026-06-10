@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafePay Connect - Select Recipient</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #254EDB;       
+            --bg-light: #F8FAFC;           
+            --text-dark: #1E293B;          
+            --border-color: #E2E8F0;       
+            --placeholder-color: #94A3B8;  
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #CBD5E1;     
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;       
+            align-items: center;           
+            min-height: 100vh;
+        }
+
+        .mobile-container {
+            width: 100%;
+            max-width: 375px;        
+            height: 667px;           
+            background-color: var(--bg-light);
+            border-radius: 32px;     
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+            overflow: hidden;        
+            display: flex;
+            flex-direction: column;  
+            box-sizing: border-box;
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;       
+            padding: 24px 20px 16px 20px;
+            background-color: #FFFFFF; 
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            margin-right: 16px;
+        }
+
+        .back-arrow {
+            font-size: 20px;
+            cursor: pointer;   
+        }
+
+        .app-header h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0;                  
+        }
+
+        .contact-list-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;    
+            gap: 12px;                 
+            flex-grow: 1;              
+            overflow-y: auto; 
+        }
+
+        .search-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            font-size: 20px;
+            color: var(--placeholder-color);
+        }
+
+        .search-input {
+            width: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 14px 16px 14px 44px; 
+            font-size: 15px;
+            color: var(--text-dark);
+            box-sizing: border-box;
+            outline: none;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-blue);
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #64748B;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 8px 0 4px 0;
+        }
+
+        .contact-card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: center;       
+            background-color: #FFFFFF; 
+            padding: 12px 16px;
+            border-radius: 14px;       
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .contact-card:hover {
+            border-color: var(--primary-blue);
+            transform: translateY(-1px);
+        }
+
+        .profile-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;        
+            display: flex;
+            justify-content: center;
+            align-items: center;       
+            font-weight: 600;
+            font-size: 14px;
+            margin-right: 12px;        
+        }
+
+        .circle-blue { background-color: #E2E8F0; color: var(--primary-blue); }
+        .circle-purple { background-color: #F3E8FF; color: #7C3AED; }
+        .circle-green { background-color: #DCFCE7; color: #15803D; }
+
+        .profile-details {
+            flex-grow: 1;              
+        }
+
+        .profile-details h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0;
+        }
+
+        .profile-details p {
+            font-size: 12px;
+            color: #64748B;            
+            margin: 2px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-container">
+        
+        <div class="app-header">
+            <a href="send-money.html" class="back-link">
+                <i class="material-icons back-arrow">arrow_back_ios</i>
+            </a>
+            <h2>Select Recipient</h2>
+        </div>
+
+        <div class="contact-list-content">
+            
+            <div class="search-wrapper">
+                <i class="material-icons search-icon">search</i>
+                <input type="text" class="search-input" placeholder="Search name or phone...">
+            </div>
+
+            <div class="section-title">Recent Contacts</div>
+
+            <a href="send-money.html" class="contact-card-link" data-name="Lerato M." data-email="lerato.m@email.com" data-initials="LM" data-color="circle-blue">
+                <div class="contact-card">
+                    <div class="profile-circle circle-blue">LM</div>
+                    <div class="profile-details">
+                        <h3>Lerato M.</h3>
+                        <p>lerato.m@email.com</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="send-money.html" class="contact-card-link" data-name="Siyabonga Z." data-email="siyabonga.z@email.com" data-initials="SZ" data-color="circle-purple">
+                <div class="contact-card">
+                    <div class="profile-circle circle-purple">SZ</div>
+                    <div class="profile-details">
+                        <h3>Siyabonga Z.</h3>
+                        <p>siyabonga.z@email.com</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="send-money.html" class="contact-card-link" data-name="Tresina M." data-email="tresina.m@email.com" data-initials="TM" data-color="circle-green">
+                <div class="contact-card">
+                    <div class="profile-circle circle-green">TM</div>
+                    <div class="profile-details">
+                        <h3>Tresina M.</h3>
+                        <p>tresina.m@email.com</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.contact-card-link').forEach(card => {
+            card.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const selectedContact = {
+                    name: this.getAttribute('data-name'),
+                    email: this.getAttribute('data-email'),
+                    initials: this.getAttribute('data-initials'),
+                    color: this.getAttribute('data-color')
+                };
+                
+                localStorage.setItem('chosenRecipient', JSON.stringify(selectedContact));
+                window.location.href = this.href;
+            });
+        });
+    </script>
+</body>
+</html>

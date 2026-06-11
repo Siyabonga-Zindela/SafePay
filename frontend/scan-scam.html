@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafePay - AI Scam Check</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global-styles.css">
+
+</head>
+<body>
+
+    <div class="mobile-container" style="padding-bottom: 80px;">
+
+        <div class="app-header">
+            <h2>AI Scam Check</h2>
+        </div>
+
+        <div class="form-content">
+            <div class="input-group">
+                <label class="field-label">Paste or type a message</label>
+                <div style="position: relative;">
+                    <textarea class="input-field" style="height: 110px; resize: none; padding-top: 12px;" readonly>Hi, i changed my number. Please send R2,000 urgently.</textarea>
+                    <span style="position: absolute; bottom: 8px; right: 12px; font-size: 11px; opacity: 0.5;">49/500</span>
+                </div>
+            </div>
+
+            <button class="submit-button" style="margin-bottom: 24px;">Check Message</button>
+
+           <div class="risk-result-box">
+                <div class="risk-header">
+                    <h3 class="risk-title">High Risk</h3>
+                    <span class="risk-score-badge">92/100</span>
+                </div>
+
+                <p class="risk-summary">This message has indicators of a scam.</p>
+
+                <ul class="risk-factors-list" style="padding-left: 20px;">
+                    <li>• Impersonation</li>
+                    <li>• Urgency tactics</li>
+                    <li>• Requesting money</li>
+                </ul>
+                
+                <p class="risk-footer-warning">Be careful. Do not send money.</p>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="dahsbaord.html" class="nav-item">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </a>
+
+            </a>
+            <a href="requests-list.html" class="nav-item">
+                <i class="material-icons">swap_horiz</i>
+                <span>Requests</span>
+            </a>
+            <a href="scan-scam.html" class="nav-item active">
+                <i class="material-icons">qr_code_scanner</i>
+                <span>Scan</span>
+            </a>
+            <a href="wallet.html" class="nav-item">
+                <i class="material-icons">account_balance_wallet</i>
+                <span>Wallet</span>
+            </a>
+            <a href="profile.html" class="nav-item">
+                <i class="material-icons">person</i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
+    
+</body>
+</html>

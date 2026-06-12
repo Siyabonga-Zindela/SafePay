@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Funds</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard-main-wrapper">
+      <div class="my-wallet-header">
+        <ul class="my-wallet-header-items">
+          <li>
+            <a href="dashboard.html">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3ZsQ0CQQwF0WnCK+i/EiIEOhIuoBxOSBsgGuB7Na8Cj+TEuyCpgwE8gAvNI3bgDdxoqoDnjHgBJxoyIoURKYxIYUQKI1IYkcKIFGVEiFoh4mObEfs8V9vaVgmpn9U601gZE6qMCVXGhCpjQhmTyphUxqQyJtVSMePre/pOc2O+AVz/PYi0qgPJdHQfipCs1QAAAABJRU5ErkJggg=="
+                alt="back--v1"
+              />
+            </a>
+          </li>
+        </ul>
+        <h2>Add funds</h2>
+      </div>
+      <h3>Choose Amount</h3>
+      <div class="choose-amount-wrapper">
+        <div class="amount-card">
+          <label for="R100">R100</label>
+          <input type="radio" name="amount-card" id="R100" value="100" />
+        </div>
+        <div class="amount-card">
+          <label for="R100">R250</label>
+          <input type="radio" name="amount-card" id="R250" value="250" />
+        </div>
+        <div class="amount-card">
+          <label for="R100">R500</label>
+          <input type="radio" name="amount-card" id="R500" value="500" />
+        </div>
+        <div class="amount-card">
+          <label for="R100">R1,000</label>
+          <input type="radio" name="amount-card" id="R1000" value="1000" />
+        </div>
+      </div>
+      <h3>Or enter amount</h3>
+      <form
+        action=""
+        method="post"
+        id="deposit-amount-form"
+        class="deposit-amount-form"
+        aria-placeholder="R100"
+      >
+        <input type="text" id="deposit-amount" />
+      </form>
+      <div class="dashboard-divider-line"></div>
+      <div class="btn-demo-deposite-wrapper">
+        <p>Add R <span id="amount-to-deposite">500</span></p>
+      </div>
+      <p class="disclaimer-text">
+        This is a demo environment. No real money is involved.
+      </p>
+    </div>
+  </body>
+</html>

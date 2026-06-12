@@ -255,10 +255,207 @@ h1{
     width: 100%;
     background-color: rgba(128, 128, 128, 0.685);
     height: 1px;
+    padding: 0px;
 }
 .recent-transactions-header{
     display: flex;
     list-style: none;
     padding: 0;
     justify-content: space-between;
+}
+.nav-bar{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: white;
+    z-index: 999px;
+}
+.nav-bar li, a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav-bar a{
+    color: gray;
+    text-decoration: none;
+}
+.nav-bar p{
+    margin: 0.5px;
+}
+.nav-bar a:visited {
+    color: rgb(30, 28, 121);
+}
+.nav-bar img{
+    height: 30px;
+    width: 30px;
+}
+
+.sender{
+    font-weight: bold;
+}
+.recent-transaction {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+}
+.amount{
+    color: green;
+    font-weight: bold;
+}
+
+
+/* MY WALLET STYLES*/
+
+.my-wallet-btns-wrapper{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100%;
+    padding: 0;
+}
+.my-wallet-btns-wrapper img{
+    height: 30px;
+    width: auto;
+    background-color: rgb(43, 43, 255);
+    padding: 15px;
+    border-radius: 30px;
+}
+.my-wallet-btns-wrapper li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-wallet-btns-wrapper p{
+    margin: 0px;
+}
+
+.my-wallet-header{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+.my-wallet-header h2{
+    text-align: center;
+}
+.my-wallet-header-items{
+    padding: 0;
+}
+.my-wallet-header-items img{
+    height: 30px;
+    width: 30px;
+}
+.quick-summary-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 1.5rem;
+    width: 100%;
+}
+.quick-summary-wrapper-title{
+    padding: 0px;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.quick-summary-wrapper-title #tot-money-received{
+    text-align: right;
+}
+.quick-summary-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.quick-summary-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.tot-received{
+    color: green;
+    font-weight: bold;
+}
+.tot-sent-amount{
+    color: darkred;
+    font-weight: bold;
+}
+.tot-pending-request{
+    color: orangered;
+    font-weight: bold;
+}
+
+
+/*ADD FUNDS STYLES*/
+.add-funds-header{
+    display: flex;
+    gap: 7rem;
+    list-style: none;
+}
+.add-funds-header li{
+     display: flex;
+    justify-content: center;
+}
+.choose-amount-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.amount-card input[type="radio"]{
+    display: none;
+}
+.amount-card{
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.amount-card:hover{
+    background-color: blue;
+    color: white;
+}
+.deposit-amount-form{
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+.deposit-amount-form input{
+    width: 100%;
+    font-size: 1.4rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    padding-left: 10px;
+}
+.btn-demo-deposite-wrapper{
+    margin-top: 1rem;
+    width: auto;
+    background-color: rgb(57, 80, 238);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.disclaimer-text{
+    text-align: center;
+    color: gray;
 }

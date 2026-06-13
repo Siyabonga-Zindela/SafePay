@@ -10,12 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/global-styles.css">
-    
-    
 </head>
 <body>
 
-    <div class="mobile-container">
+    <div class="mobile-container" style="padding-bottom: 80px;">
         
         <div class="app-header">
             <a href="select-recipient.html" class="back-link">
@@ -24,7 +22,7 @@
             <h2>Send Money</h2>
         </div>
 
-        <div class="form-content">
+        <div class="form-content" style="overflow-y: auto;">
             
             <div class="input-group">
                 <span class="field-label">Select Recipient</span>
@@ -56,12 +54,33 @@
                 </div>
             </div>
 
-            <button id="reviewButton" class="submit-button">Review Transfer</button>
+            <button id="reviewButton" class="submit-button" style="width: 100%; margin-top: 20px;">Review Transfer</button>
 
         </div>
-    </div>
 
-        <script src="./js/request-money.js"></script>
+        <nav class="bottom-nav">
+            <a href="dashboard.html" class="nav-item active">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </a>
+            <a href="requests-list.html" class="nav-item">
+                <i class="material-icons">swap_horiz</i>
+                <span>Requests</span>
+            </a>
+            <a href="scan-scam.html" class="nav-item">
+                <i class="material-icons">qr_code_scanner</i>
+                <span>Scan</span>
+            </a>
+            <a href="wallet.html" class="nav-item">
+                <i class="material-icons">account_balance_wallet</i>
+                <span>Wallet</span>
+            </a>
+            <a href="profile.html" class="nav-item">
+                <i class="material-icons">person</i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
    
 </body>
 </html>

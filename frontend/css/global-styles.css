@@ -512,3 +512,27 @@ body {
 .interaction-hint-text:hover{
     color: var(--primary-blue);
 }
+
+
+
+
+@media (max-width: 480px) {
+    body {
+        background-color: var(--bg-light); 
+        align-items: flex-start;
+    }
+
+    .mobile-container {
+        max-width: 100%;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0; 
+        box-shadow: none;
+    }
+    
+    .bottom-nav {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-bottom: env(safe-area-inset-bottom); 
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafePay Connect - Send Money</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global-styles.css">
+    
+    
+</head>
+<body>
+
+    <div class="mobile-container">
+        
+        <div class="app-header">
+            <a href="select-recipient.html" class="back-link">
+                <i class="material-icons back-arrow">arrow_back_ios</i>
+            </a>
+            <h2>Send Money</h2>
+        </div>
+
+        <div class="form-content">
+            
+            <div class="input-group">
+                <span class="field-label">Select Recipient</span>
+                <a href="select-recipient.html" style="text-decoration: none; color: inherit;">
+                    <div class="recipient-display-box">
+                        <div id="recipientInitials" class="profile-circle circle-blue">LM</div>
+                        <div class="profile-details">
+                            <h3 id="recipientName">Lerato M.</h3>
+                            <p id="recipientEmail">lerato.m@email.com</p>
+                        </div>
+                        <span class="right-chevron">&#10095;</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="input-group">
+                <label class="field-label" for="amountInput">Amount</label>
+                <div class="currency-input-wrapper">
+                    <span class="currency-unit">R</span>
+                    <input type="number" id="amountInput" class="input-field amount-padding" value="250.00" step="0.01">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label class="field-label" for="messageInput">Message (optional)</label>
+                <div style="position: relative; display: flex; align-items: center;">
+                    <input type="text" id="messageInput" class="input-field" value="For lunch" style="padding-right: 40px;">
+                    <i class="material-icons" style="position: absolute; right: 16px; color: #94A3B8; font-size: 20px;">restaurant</i>
+                </div>
+            </div>
+
+            <button id="reviewButton" class="submit-button">Review Transfer</button>
+
+        </div>
+    </div>
+
+        <script src="./js/request-money.js"></script>
+   
+</body>
+</html>

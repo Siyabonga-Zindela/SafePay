@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard-main-wrapper">
+      <div class="dashboard-header">
+        <ul class="dashboard-header-items">
+          <li>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M 25 0 C 22.792969 0 21 1.792969 21 4 C 21 6.207031 22.792969 8 25 8 C 27.207031 8 29 6.207031 29 4 C 29 1.792969 27.207031 0 25 0 Z M 19.375 6.09375 C 14.804688 8.050781 12 12.457031 12 18 C 12 29 8.199219 31.761719 5.9375 33.40625 C 4.933594 34.132813 4 34.808594 4 36 C 4 40.207031 10.28125 42 25 42 C 39.71875 42 46 40.207031 46 36 C 46 34.808594 45.066406 34.132813 44.0625 33.40625 C 41.800781 31.761719 38 29 38 18 C 38 12.441406 35.199219 8.046875 30.625 6.09375 C 29.769531 8.367188 27.566406 10 25 10 C 22.433594 10 20.230469 8.363281 19.375 6.09375 Z M 19 43.875 C 19 43.914063 19 43.960938 19 44 C 19 47.308594 21.691406 50 25 50 C 28.308594 50 31 47.308594 31 44 C 31 43.960938 31 43.914063 31 43.875 C 29.117188 43.953125 27.117188 44 25 44 C 22.882813 44 20.882813 43.953125 19 43.875 Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <h2>Hello, <span id="username">Sthandiwe</span></h2>
+      <p class="grey-text">Welcome back!</p>
+      <div class="wallet-card">
+        <p>Wallet Balance</p>
+        <ul class="wallet-items">
+          <li class="wallet-balance">R<span>5,680.00</span></li>
+          <li class="wallet-card-icon-wrapper">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACtklEQVR4nO2Yz28SQRTH9w/R+qcYk2Uh5aL1gLEXf5Vaz2Klu0vjopdaDxXaBXqgPVi0nLSHloOkNtAK1P4H9QCNJtDEol0Pe3nmuyaEuO4yu7Jy2Ze808y8+ex73xnmwXG++eabc0uLVy7lpODyaiJ4oooBfWWOJy9cFQM69shKoXR2lh9jgsvI/P2sLPzcW7+jn5Tj1G0opB0988S7DYVa5Tjtrt/WsWdGFqID4fJK+PzrnuQZlGbh2DOvjJ+rIj9lWVZ8xSjgtD7InCRoy6Jw0QQIzaGsVou/1Z70tLOWDNOOepPa1cTATTFnW51EdnrrEctq/u9yB16aACFWaI7lSzvVBNUK05RXwtSuyLZwmFMvTNPp/jxT7Nb7x7SaCLZMgDhRTg9EbSNK25lJy3FkrlaIOorZbSRpReR1EyBS71Qzp/vzRoasxlFW1sz1O1iGAtipJgw92gFizsgAPw4oMQ4StPrfAZEVwOWVcaZDAq06yaQlIKujrMhc2wauB1mRjblY42QPVxl0IwPNRQwfUPMBj3xAcgXI4sXFCTrcnKHvjSQzFOZiDdZ6es2c1RX6XIrRVipChYWrzPcg5m6lb9BxKWbE8KzE/X6wEaXXz6/Rj8OntpkDHH5JnMrgnwHh71IR+lR8YDmOsiJzbnQ6FMDjnYeGrqzGNxcnDEkMB1DkdTwWnQQ6qyt4/VqOY4xFc0wPVjz50QKOGrBZxpM/1DQBonlGw+KoxKUYFV9ctxwvuijx7totPScJS2bAWX7Madv5luWQpCLM8b58ECkrCdrSo8sXuL8ZOns0zyyQB6+m6M0C2zWDK4kFDntn5/h7nJ2hs0fzjHJDD/2dHvSEsiJzgOuw9MUV2bgvcSX9eVEjNvZAWZE5NR64y7EYOns0zxCr938ehZrQnGVZffPNN87WfgFj4ZImOiFtGwAAAABJRU5ErkJggg=="
+              alt="sim-card-chip"
+            />
+          </li>
+        </ul>
+        <ul class="wallet-items">
+          <li>View wallet</li>
+          <li class="view-wallet-icon">
+            <a href="my wallet.html"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAi0lEQVR4nO3YsQ3CYAwFYcMCIGjZX0xAgxiAIkBBxzCHIrIBRX4/3bfBFbYsV0mSJEkjAs7ABdhVZ8DEz711DHACPkvMHHWorgiOeRgzcMyxukqOeRoTGwNsgBfrm4D9PyHbZfB6h6yFhDkhYQ1jxCAi7i0SznmMGERExAx4pzwfbsC1dYQkSZKqnS/Oj4yAHydd7gAAAABJRU5ErkJggg=="
+                alt="right--v1"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="dashboard-btns-wrapper">
+        <li>
+          <a href=""
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZTWhcVRTHT9Wi+NEiWG0sGuadc+4Lgw1CNopCESvFnV0UCgUDBSdzzsvowo0LIeIqSLSi7gQXggQqiGh1qVLowrabtImFQtuFrR/Q+hHxC63KuXNnkjwyM28mk5k3Mj8Ywszcd9/553/ueffcARgyZMj/AqLKtpjkOSY971C/gEEjjsuxI3mTUZcd6b/2YpRzMCBsYZa9THrUkf5dE1B7mTOQZ+L48B2MUnKoS+ngV9zQ5SgqbYc8QlRBRp1l0h9Wpc8VJn3LoV5OiXkDcsaWGJN9juQTR3K9LoD0M4fyVHFUdzLJGf85ytfh+39szUAeKBb1dp8+JIv1/zLKH0zyrivIuI0hquxYEaFfOZK5IPLTfscPzBL59EG9tirfv2GUl5wr3VUbRykRzFO7GOWifx+Vn+ybABfpo+nqw6SnGeXpPXtmblo9llIifHpFyf5wzXmAmRt6Gvzo6OQtFiiTnl2bPnqUqPzQetesJwLMSZLPw+Kv9Dd9SL619LFAG13XSMRYVH7AFriVXHuy9yx9GOWvdPpMTJS2Nru2kQiDSd4Oa+l12Pz0CUFUb/inCUJMHs4yRzMRu++XOx3pr5tWcuM4uddShVGurjyk5DufUjy1K+s8zUQYjvSF8N0x6FH6lMydduZqJQLgwI2MesnvqzDZt+HgiSo3h+qzkE4fF00/0uGcLUQAxCQHulJy108f/d7SB1Hu63TeLCIMh3q8OqacQKf4jdqah5ecMlfMnY4nTYmwv43KMbM+GO79k+2GOxdS2w5UrV0gmirCBskqwnCo74QH4BHYCH5bgHLEkfwWKtJ1RzLfqaB2RBBVdjjS3+2eiEobErImANTZUMurglA+Nuu7vSZqMOuLYexHXRHRDUHtirANpAt9B1HyRNeFdCKoXREGR8nB2nhrujZNSFZBnYjwQkhPhCIj0EsKhWfvYdJX1wgimc+6sFczhjIR5vjROkjoB9bd+S4P5eeV3iO7E4Zvc6tC5qDfRFH5bkZ5PwQ0346z1nSZo8wSQR4I7vxiQcVRsjvTNaQzIRU/hDxRO/HI4oo1XfVzq0gfhzzhU8UXgNauxKSHwppa6knJbZdQzVq64lC/9GnFOgV5pJDBFTtNqZXc8fHnb4O8wi1ccajvhWOiVyDPFJq4MjZWGrFO0/c9broAeYdRXlvPFUZ5OXz+AQwCxVHdmXbFOk07dakeLMhjMChwyhWOypPh/WIuS25WV5j0ZDiNeQYGDfatc/UMIIi4NjJSuhUGjWLdlfrZ2CwMKhxcGZiS29QV1Av2m3nDQUOGDIHN4j/WR3BpoaZdXAAAAABJRU5ErkJggg=="
+              alt="sent--v1"
+          /></a>
+          <p>Send</p>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD8klEQVR4nO1ZTYwUVRB+AxqigD8JK8EgZLuqXsMmrj8QfhJxE/YiCXhA9sIJFpzpqnHcGCQaTOSIXFQuHgx4kJOJkevuSjwIGy6ACcT1IiyHvXgAlEX+Amhq+s3ITnZm+o3zu+yXvEz3pOtVfe9Vva6qNmYOc2guLMo/nTLMY0XEtDHsTDa2elVr2QX7WBAxxhjE3AILMqn3IfKQMQPzTdMxMJ+AP8zbBTKpNpXaWZHIsmXppwn4kF4TykVjTMpHPUD2dQL5UmUt8F869JqAv0CMXvNkk8rPo7YAH1LbfFzrz8I1EW9PqnHlyqHnLMg3FuVhBZd4SMDHgiD9bNJ5EaN3ZrItCRHdiTHE7Nakyrq7319qgX+J5fkWAX9OlFmHmHtGh17rjliU285VzgdB9EJyMtmtapNfsAfRZuOBNWvSTxaVgPyKmINyzwIIWpDxeLH4dF/fwSd8dNlA+r2C3Wty5E+dD1+2Nr2k6vM2vYRAJmIZOeCvT+pPRH296LeBvJFUjija5Fz4mrpey4kQSca51IiPXF4fyI9uV95tPRGUE/HpJrt85GJ9vCdeBP6+4USCIL3CAo8S8JT+6v00GZBLKqNB7EtkVXfWOiK/e+nEGogUtr84SlyIgG/q/729+xb6EunpkUXukJjy0WlrIUIgN9xkbzl/vtFoIlRFZ407wqPTX5Q83GjXstV01h4jMqKrphMC8EvTZfgHlUHk3fUK9qCqzkacWsBpZ8yoLxFCPhnLZvf6yNlGENGXmUW+Hh/B0abkctzn/P9qGA4u9tFpG5WiEPAnzqgJxFxXdRK5LkK+4vR97KvPJk8apd9nYk38NAF0J8346iBDlQKcgH9zQXzKt2CzPkmjy4HGEHlbUgWaklvkc07+dr6wIlmvuZgOxGiDBT5ige+4+c8m2b0C1Bb/NP6R4kWLGpMQ+boD5GjlwoofWOSvfeICyxRWpaTqXuoSyataRBHyhf9KXb4QF1vvvVKvUtdWI1LafNAGgG8BVA/0aeyR7K/UfJgR5d2hPYeZ9UTqhXKKmmZAvTBHpN1gO4nI8uUfPGVBfvYJxorBC3JG3xGmFXh5BT9feFn9HyI6h85lWokwzL5YyGQJ+TtjDs5LIJYi5G/dTkyWNhdaBsRMjzba8mSAv6r2vOsBx3lTN/eadgKRvFlsUCN/VO45rT9iwnLXt1xoGkKI3rYo9zX7namGR4x2xpkxPwhRdph2BiJHbsXv2SDaUvhfVz+/C8UvYB0AAjnsYuBvgOzGMMiuzXcNY4KfmQ5CikCOOzJ/uKEkjvvWNi1H/PGHhx95V/xUqCc6DmE4uFg/senwbfm0HbQp4fOtcA5mFuFfqoTTx4mn8i8AAAAASUVORK5CYII="
+              alt="request-money"
+          /></a>
+          <p>Request</p>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADw0lEQVR4nO2aS2sUWxDHq8WdctUPoNGuqtNRMF5BLj4Qv4GvlW93yVTNiAvBy71wTdyIiEsXgvj8Gj5R/AZqVNCFYEQFXxFudkpNpp0zkziZjD3xzHT/4ECTzNSc+vc5daqqG+A3sWPH6GJGrXBcOgoAEeQNR3LSkX6zQVQ6AHkjIT2YCmDXkEMiRhmu3f38bYGCgpwzuKbsGOWlQ32xNh5hyBuM+m96CjDKP5A3GGXME2AM8gYXAkghgCsE0EIAlxMBIit4mHV/mvf/RIAZn+sLiEoHUmcdysVaIdQsQGT/68sSOfFK31QERj1dF0BP+85X/xaX90EfEc1wEPX9bNf+KoE+I2LSCw2OzjKY5BLA6CLoU6JWIvS78y1FyIvzs4qQN+dTIov0tWjfdwGvoKCgYAZEpY2W9jLJXUYZZ5SvtTHOpHesJrDPQJ8RMctec3KuLLCeCusTjst7oNdJkpHVTPqwbcdnJkcP4nh4FfQizKXtDuVdo0P6waFecai7kqSUDA2dWGLDrh3Kbody1ZF8bBLirYsr26AHnZ/ynPjfkZ6J4+Flc313YOD4ckY9W/tOWh1O9YwIa1frQPWu1Zsdr5lH/pqvHQuGjvSVXzIzSww9kOM/9J1HlJWdGrP9z6gTXnC8DyHDLHv9ZZ/E5U2/apOotLlhO6HshkCJmo66M1kZdijnvFXwGEKEpvfsj2jfTsBrl/WrZIV/OjBXNkBocEOTUy5nbd+RXvNW1yiEBpPe6eY+9eMLk96G0GDS5+kEu/HCQzVZqh+JTyE0GGUyneC6dbo0a/tm09tikxAajPqlmwIQHfvD22KfITSY5Fk6QXv/J2v7zlUGvRUwDvkOgnILQoO9h51W1WVun+SGdwz+B6HBrH/WJygfrarLNhHSTz/sr5EhCBGH+tg7qs5mZpfkvCfuIwgVjst7/GKokzK4GcTyFr8YSrC0E0KGSR54q2DiV1pa1ltgkjdeIXQPfh+jixzqYRutnuOZw40NEZ2wkraTO+87b9etewvtza9jGOWIdycOt/qsta+aavgpK2ktmLVZ+Z1vbqklKFuzmt+CvNXlTARvJaSng1V11VjhKoOWMVZTXFcZrJ3z1xuife3Oz+V8J/ObN9zBD1T7g6j3O22L255vt6UWpAAp0y3v+hE595BH8432QQuQYp0ca2ZYPV97NDZZrSLtSRDpbUdyqtMkpycE6CaFAFgIMFYIQAskgEO96Uj+DmpU57RQAlDYoysCOMuzA3CuzTziUOYCgBUbJIeszg95TDvffjH0HSai4xA9NvJAAAAAAElFTkSuQmCC"
+              alt="deposit--v1"
+          /></a>
+          <p>Deposit</p>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAChElEQVR4nO1WPWsUYRBeG0HsxEK908Sdj72skD/iV2WIIKgItzezxm8QC0tB7Oz8qgQFk6gg8ay0UCHYWSk2Fv4CvSh+JJfI7L57xJPd27scaJGBhWX3eed535lnZl7PW7f/zQBkJ4GeJJRnBPKeQL4SyqvsP4NcI9CrjHKFUS4y6ME1ERJFFUK5zahLjLryxwP6soNDnc6+E8gCgO4ZmDSAxgECbaXO9BeD3CfSwwCK4+PnN6/GMsqR1cTkx5ODnRRkilHaiSPU6SCIRovwYXhiC4EsEshHt4FlxvhM3yflhFTaRHqq7DrLbxge2siol1NiXWbQiVKLk5xm4S0gZdA3DDqf6wfkkktRy4TZmxj0jhPOwyJcls8CyAYGfeJ83SsktZ2Zegn0J+JUdY3EXm13zKk/WfT9+q5coNVpKiZ5ULjDksQJDmTWKf1CPjFq04VmYljEiHLcVUazgFg+GGjMj2h4xFHosJ/yiTM1o74o6axEqHXOYb+XIX6ei/EbR61Pu5TMlyUm0FbPUFtL7P5XrZ7dxCDXO20R5W532yxQ9gqDvhtIXEnDSEm/EemxXoQdn3486XzO5YIYGnHWm//elLxmkLf9Tp2snBhVckHWNKzYGeRHYcGXtLFRHTFfyfCgqFK8Q5RbruBn1kpMqI/TMMuNnuAgiHdk6g5QTg9KyiDnXIg/hyO6rdQiRNnvZvFS3zO1Q5qNVdnb1+K0b6cXARNImZzbZYFRHqUnlbaJ1RvEEON9DPLFkZtIZqw8rKUmlz7UZvJuJQMya1MtC2/fJ+025vpWaxyJ2rsve12Pw9ys1erbvWEZUVSxWmSUp9aFkgsdyIK9u7YoPUtm3bx/YL8B05BNGcWUMH4AAAAASUVORK5CYII="
+              alt="time-machine--v2"
+          /></a>
+          <p>History</p>
+        </li>
+      </ul>
+      <div class="dashboard-divider-line"></div>
+      <ul class="recent-transactions-header">
+        <li>Recent Transactions</li>
+        <li><a href="">View all</a></li>
+      </ul>
+      <div class="recent-transactions-wrapper">
+        <div class="recent-transaction">
+          <p>
+            <span class="sender">From Nondumiso Z <br /> </span
+            ><span class="date">Today, 14:45</span>
+          </p>
+          <p class="amount">+ R1,200.00</p>
+        </div>
+        <div class="recent-transaction">
+          <p>
+            <span class="sender">From Siyabonga Z <br /> </span
+            ><span class="date">Today, 10:45</span>
+          </p>
+          <p class="amount">+ R3,200.00</p>
+        </div>
+        <div class="recent-transaction">
+          <p>
+            <span class="sender">From Siyabonga Z <br /> </span
+            ><span class="date">Today, 10:45</span>
+          </p>
+          <p class="amount">+ R3,200.00</p>
+        </div>
+        <div class="recent-transaction">
+          <p>
+            <span class="sender">From Siyabonga Z <br /> </span
+            ><span class="date">Today, 10:45</span>
+          </p>
+          <p class="amount">+ R200.00</p>
+        </div>
+        <div class="recent-transaction">
+          <p>
+            <span class="sender">From Siyabonga Z <br /> </span
+            ><span class="date">Today, 10:45</span>
+          </p>
+          <p class="amount">+ R3,200.00</p>
+        </div>
+      </div>
+
+      <ul class="nav-bar">
+        <li>
+          <a href="">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVR4nO2QPQrCQBBGVwuxFazFxlIs9Ap2nsLOU7zJNKm9g52HEBRLWxutRLQWOxFWAhuIkhhNAhbxgwdbzL75MaY0AVoisgkI3oXKVbULHETEBgAnVe0XIvc8bygil1Ae4QqMcsmBMXCLkYeb3EVkksVdASRJHMMUqH46dQ2YfSG3jjlQfyv3fb8hIosMcutYA82kydvANofcOnaq2nmSq2oPOBYgt44zMIhOvy9QbsNNYk+VV2zS8rMGJmPdv4EtZ4PV6ydgmbXuH5OWB9OXae1v4w4LAAAAAElFTkSuQmCC"
+              alt="home"
+            />
+
+            <p>Home</p></a
+          >
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiklEQVR4nO2ZT2sTQRjGp1AFRaN4iAdBP4AH9Qso6k2LFMGPIHrzJIiov2c2iSaHqNeo9ORR9CbY9qRWBP+Aiifx4MGrtbUggjEyECGGNtnZnXQ3TR54YWHZeeY3f3bfd9aYscZaX0lqDUuYkQIxOZZW62PWo5pkFjSqIBeBSbPOAjZLuhoEBHhvjJnw6UAURYeA25I+AMsu3LWkW+6eJ8ykpI8hQE7HNa1WqzuAGeDPWqPo7gH3gIIHzHRiEOA5MBXXrFKp7AbeeqzxN0DRA+aEpAUvEGvtkbgGHdP/n0nMeOa796y1R2OD+DTcfm7NDdkvgMsJ/FrBQdy+kLSYAuQ7sDNzEEnnkkJ0xNk8gDxKCwI8GDhIqVTaB8wDK5LmgL1dz3wOMCOfPD1b3iCuwa7Rm+26vxIA5IePp5KAOJOuRpcHDaI+nklB5vqMTvClpf6eiffIbHuUnnSvV+Bh6M1e6uOZCGRkXr9AAfiWAmIxFx9EJ+BKimV1yXhKcUFcYubTsEv8XLacAOKpb9IIHIsN0o4Fa+1JD4OiS809IF57pvFTwIvONuKC/DOc9jArSLorqdkDogncqdVq29MWVuqC6gniyswE038QuOnKZElLLtrX9SiKDoQqdeUJ4mblmjsIMNkcPhCr851K8QrNJMyGBwmlzDsQSmOQvEnDBFKv17e4c6lQGxd4CWzNBKZ9FPQuAIj76O4yWapcLu+R9CUFxFdXSJk8KIqi/QlrkiXflGXgAg5L+ukB8ctae9zkUcAp4HcMiKa19ozJs4DzMUAumGGQpBs9XrPXzRBpwv25WgXivu9vvMzVaDQ2AY87IOazqGmCyH2p23X2K2CbGWYBRZ9DhrHMBtJf1oWE/T1PydQAAAAASUVORK5CYII="
+              alt="request-money"
+            />
+
+            <p>Requests</p></a
+          >
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA8klEQVR4nO3UMUrEQABG4bmTJxCs7D2ClraW/5tUtpZ6BHsrwRN4p5GFDQiCmE1Ixux78LfJzFdMKWZmZj8C2tSVPZ0NARAAAVj9ckslAAI0AVgJgBMepSUmwC8JgABtFsCUegRYNQRAAARAAARAAARAAARAAARAAATg/wKw0aW6waKDQwuAAG0zADP7c0k+k3wA78e9JXn9thfg+binJI/jgIdxSe6T3B0G3NZab8YluU5ydVit9XIYhovSS5z7w4YACIAA7AuACT/rEWA2FgIgAAJw+gc2TgAEaAKwIAAzH6UlW+VsCIAAnDOAmZmV/fcFxx67Msb9QWwAAAAASUVORK5CYII="
+              alt="portrait-mode-scanning"
+            />
+
+            <p>Scan</p></a
+          >
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB0ElEQVR4nO2ZPWtTURyH/1ZFfGkXQV06tKOfQJcufQG/gJOLCLrZL1B4fodLAiFNacZ01C0fwKUoqBXc3DoUkdqp6FCqiKWgt1yaIUTrPaFN7rnx/ODZnyfn3ARyzeLiRmtJkkxKegQ8AzYl7QGfgCVgzEIdcMU5dw9Y7YinJwE8tZAGTEtalLQu6ee/5Ht4W6h4pVK5CTyQ9BzY7UO8l/2hijebzUvOuVlJNUkfgN+nkO/m11CuC/AYaGef3BmJ/4ENSP6WpAqwMyjxgYYkSTIFrAEHwwrQWYcAM50rdLvRaFy2Mg640Gq1LtooDBjLfnklvRvkQ+3Bd+CNpIftdvt8vxETwKsC5dMTeF2tVq/7dpwDXgQgnf4NYCO7+j6ncb9oWeXzJDdE0ssARNOcU3nvcyLfihZVPj98TiQtAxZDFBYWQxQWFkMUFhZDNByA7ex/gHq9fhWYk/S5lCHOudluH+fcfClDgGvdPrVabbysIXOjciLbmXx2MsBCaZ8ReRJDFBgWQxQWFkMUFvbfhACHRUsqh8zRJ+RjCUK2fEJWShCy7Pt26mvAEV+AG+Yz59zdEGM4jrhj/b5qltTI7mORXwDAYcdh2fsk4uLirHdHJ2HCRtNaj8sAAAAASUVORK5CYII="
+              alt="wallet"
+            />
+
+            <p>Wallet</p></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB/UlEQVR4nO2WPWsUURSG5w/4FdTCj5DOoIKW+g+MhRhCOittghot/AHPe2d32V0UrTVoegtTaNBS/4FNYDHYZGuNiRIFN0QO3IVxce69O1nRIgcOM5y5Z577nnO4M1m2Z/+bAeOS5oE3QAf45r3jY7drtdrJkQHr9fpxSY+BnqSdiG8Dz4GJ3aq8KulrAvA3BzaBK5Wgku6agmGhA+rvVFG6vQtoEZ6mHDhRpbyRsh9LKfHTyIvWnHMz7XZ7n7lzbtomO7KBhZja8dD0GhQY+0PemKRuIK9nlQypnQ/t3JR60GUP6jrnpizmnJuNqL4VAr8OJVtp/bpusQp+M/sj4OUQeDWUXFiXFB8odyfU482qilut1oHYdGcBxRuRHk/7fk75QTO/5GMzkVJvhMArsXKVTTXwIQJeCYGXEw4Fm+RZGyZzU5oA3QFehXp8MwFcyYG5UnCj0Tgi6edfgPaAo6VgX+6FkuQt4AVwLc/zc8BB7+ctJmlJ0veS3CdBaF818LmQ9EPS/WazeSiWa2uABz6nD/4EHM5SP4v+zF7N8/xUP+6cuyjpEfAe+OLd7h8CFwr5k5I+WtuG/iGQdCPP8zN2b1dJ7xJ6+RY47eFngetDQQdN0voQw7SejcqAZ4nTbmsWRwYu/Jncs4PAH5Vb3tckvfTPyr+5e5b9I/sFwyUPP5Os6LwAAAAASUVORK5CYII="
+              alt="test-account"
+            />
+            <p>Profile</p></a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

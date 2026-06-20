@@ -1,86 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SafePay Connect - Send Money</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./css/global-styles.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/global-styles.css" />
+  </head>
+  <body>
+    <div class="mobile-container" style="padding-bottom: 80px">
+      <div class="app-header">
+        <a href="send-money.html" class="back-link"> </a>
+        <h2>Send Money</h2>
+      </div>
 
-    <div class="mobile-container" style="padding-bottom: 80px;">
-        
-        <div class="app-header">
-            <a href="select-recipient.html" class="back-link">
-                <i class="material-icons back-arrow">arrow_back_ios</i>
-            </a>
-            <h2>Send Money</h2>
+      <div class="form-content" style="overflow-y: auto">
+        <div class="input-group">
+          <span class="field-label">Select Recipient</span>
+          <a
+            href="select-recipient.html"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="recipient-display-box">
+              <div id="recipientInitials" class="profile-circle circle-blue">
+                LM
+              </div>
+              <div class="profile-details">
+                <h3 id="recipientName">Lerato M.</h3>
+                <p id="recipientEmail">lerato.m@email.com</p>
+              </div>
+              <span class="right-chevron">&#10095;</span>
+            </div>
+          </a>
         </div>
 
-        <div class="form-content" style="overflow-y: auto;">
-            
-            <div class="input-group">
-                <span class="field-label">Select Recipient</span>
-                <a href="select-recipient.html" style="text-decoration: none; color: inherit;">
-                    <div class="recipient-display-box">
-                        <div id="recipientInitials" class="profile-circle circle-blue">LM</div>
-                        <div class="profile-details">
-                            <h3 id="recipientName">Lerato M.</h3>
-                            <p id="recipientEmail">lerato.m@email.com</p>
-                        </div>
-                        <span class="right-chevron">&#10095;</span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="input-group">
-                <label class="field-label" for="amountInput">Amount</label>
-                <div class="currency-input-wrapper">
-                    <span class="currency-unit">R</span>
-                    <input type="number" id="amountInput" class="input-field amount-padding" value="250.00" step="0.01">
-                </div>
-            </div>
-
-            <div class="input-group">
-                <label class="field-label" for="messageInput">Message (optional)</label>
-                <div style="position: relative; display: flex; align-items: center;">
-                    <input type="text" id="messageInput" class="input-field" value="For lunch" style="padding-right: 40px;">
-                    <i class="material-icons" style="position: absolute; right: 16px; color: #94A3B8; font-size: 20px;">restaurant</i>
-                </div>
-            </div>
-
-            <button id="reviewButton" class="submit-button" style="width: 100%; margin-top: 20px;">Review Transfer</button>
-
+        <div class="input-group">
+          <label class="field-label" for="amountInput">Amount</label>
+          <div class="currency-input-wrapper">
+            <span class="currency-unit">R</span>
+            <input
+              type="number"
+              id="amountInput"
+              class="input-field amount-padding"
+              value="250.00"
+              step="0.01"
+            />
+          </div>
         </div>
 
-        <nav class="bottom-nav">
-            <a href="dashboard.html" class="nav-item active">
-                <i class="material-icons">home</i>
-                <span>Home</span>
-            </a>
-            <a href="requests-list.html" class="nav-item">
-                <i class="material-icons">swap_horiz</i>
-                <span>Requests</span>
-            </a>
-            <a href="scan-scam.html" class="nav-item">
-                <i class="material-icons">qr_code_scanner</i>
-                <span>Scan</span>
-            </a>
-            <a href="wallet.html" class="nav-item">
-                <i class="material-icons">account_balance_wallet</i>
-                <span>Wallet</span>
-            </a>
-            <a href="profile.html" class="nav-item">
-                <i class="material-icons">person</i>
-                <span>Profile</span>
-            </a>
-        </nav>
+        <div class="input-group">
+          <label class="field-label" for="messageInput"
+            >Message (optional)</label
+          >
+          <div style="position: relative; display: flex; align-items: center">
+            <input
+              type="text"
+              id="messageInput"
+              class="input-field"
+              value="For lunch"
+              style="padding-right: 40px"
+            />
+            <i
+              class="material-icons"
+              style="
+                position: absolute;
+                right: 16px;
+                color: #94a3b8;
+                font-size: 20px;
+              "
+              >restaurant</i
+            >
+          </div>
+        </div>
+
+        <button
+          id="reviewButton"
+          class="submit-button"
+          style="width: 100%; margin-top: 20px"
+        >
+          Review Transfer
+        </button>
+      </div>
+
+      <nav class="bottom-nav">
+        <a href="dashboard.html" class="nav-item active">
+          <i class="material-icons">home</i>
+          <span>Home</span>
+        </a>
+        <a href="requests-list.html" class="nav-item">
+          <i class="material-icons">swap_horiz</i>
+          <span>Requests</span>
+        </a>
+        <a href="scan-scam.html" class="nav-item">
+          <i class="material-icons">qr_code_scanner</i>
+          <span>Scan</span>
+        </a>
+        <a href="wallet.html" class="nav-item">
+          <i class="material-icons">account_balance_wallet</i>
+          <span>Wallet</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+          <i class="material-icons">person</i>
+          <span>Profile</span>
+        </a>
+      </nav>
     </div>
-   
-</body>
+  </body>
 </html>

@@ -188,6 +188,10 @@ h1{
     list-style: none;
     padding: 0;
 }
+.dashboard-header-items img{
+    height: 60px;
+    width: auto;
+}
 .wallet-items{
     display: flex;
     justify-content: space-between;
@@ -302,45 +306,6 @@ h1{
 .nav-item i {
     font-size: 22px !important;
 }
-/*
-.bottom-nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    background-color: #ffffff !important;
-    
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-around !important;
-    align-items: center !important;
-    border-bottom-left-radius: 32px; 
-    border-bottom-right-radius: 32px;
-    z-index: 100;
-    padding-bottom: 4px;
-}*//*
-.nav-bar li, a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.nav-bar a{
-    color: gray;
-    text-decoration: none;
-}
-.nav-bar p{
-    margin: 0.5px;
-}
-.nav-bar a:visited {
-    color: rgb(30, 28, 121);
-}
-.nav-bar img{
-    height: 30px;
-    width: 30px;
-}
-*/
 .sender{
     font-weight: bold;
 }
